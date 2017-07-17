@@ -1,0 +1,29 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+#app{
+    height: 100%;
+    background-color: #f1f1f1;
+}
+.layout{
+    height: 100%;
+    position: relative;
+}
+.layout .layout-left{
+    position: absolute;
+    top:0;
+    bottom:0;
+    padding:10px;
+    background-color: #fff;
+    width: 150px;
+}
+.layout .layout-right{
+    position: relative;
+    padding: 0 10px;
+    background-color: #fff;
+    margin-left: 160px;
+    height: 100%;
+}
+.layout-left .ui.list>.item .header{
+    /*color:#fff;*/
+}
