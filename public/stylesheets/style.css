@@ -19,11 +19,36 @@ body {
 }
 .layout .layout-right{
     position: relative;
-    padding: 0 10px;
-    background-color: #fff;
+
     margin-left: 160px;
     height: 100%;
 }
 .layout-left .ui.list>.item .header{
     /*color:#fff;*/
+}
+.layout-right .layout-post-list{
+    width: 300px;
+    background-color: #fff;
+    overflow-y: auto;
+    padding:.5em;
+    height: 100%;
+}
+.layout-right .layout-post-content{
+    position: absolute;
+    left: 310px;
+    padding:.5em;
+    background-color: #fff;
+    right: 0;
+    overflow-y: auto;
+    bottom:0;
+    top: 0;
+}
+.post-editor{
+    margin-top: .5em;
+}
+#editor1{
+    height: 500px;
+}
+.post-pre .post-header{
+    text-align: center;
 }

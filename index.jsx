@@ -1,7 +1,7 @@
 import {Component} from 'react';
 import dom from 'react-dom';
 
-
+import Post from './components/post.jsx';
 
 class App extends Component {
     render(){
@@ -43,37 +43,14 @@ class Left extends Component {
     }
 }
 
-
 class Right extends Component {
     render(){
-        return (
-            <div className="layout-right">
-                <div className="ui secondary  menu">
-                    <a className="item">
-                        Home
-                    </a>
-                    <a className="item">
-                        Messages
-                    </a>
-                    <a className="item active">
-                        Friends
-                    </a>
-                    <div className="right menu">
-                        <div className="item">
-                          <div className="ui icon input">
-                            <input placeholder="Search..." type="text"/>
-                            <i className="search link icon"></i>
-                          </div>
-                        </div>
-                        <a className="ui item">
-                          Logout
-                        </a>
-                    </div>
-                </div>
-            </div>
-        )
+        return <Post/>
     }
 }
+
+
+
 
 const app = document.getElementById('app');
 dom.render(<App/>,app);
